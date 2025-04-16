@@ -13,9 +13,9 @@ if (isNaN(number)) {
   console.log(`${number} is odd.`);
 }
 
--------------------Palindrome-----------------------------
+// -------------------Palindrome-----------------------------
 
-Given string is a palindrome are not
+// Given string is a palindrome are not
 
 import PromptSync from "prompt-sync";
 const prompt = PromptSync();
