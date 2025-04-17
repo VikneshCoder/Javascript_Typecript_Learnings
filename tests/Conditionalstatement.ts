@@ -1,5 +1,5 @@
-// Write a program to check whether the given number is odd or even.
-import promptSync from 'prompt-sync';
+// ------------------ Odd or Even Program ------------------
+import promptSync from 'prompt-sync'; 
 const prompt = promptSync();
 
 const input: string = prompt("Enter a number: ");
@@ -13,21 +13,18 @@ if (isNaN(number)) {
   console.log(`${number} is odd.`);
 }
 
-// -------------------Palindrome-----------------------------
+// ------------------- Palindrome Program --------------------
+import promptSync2 from 'prompt-sync'; // To avoid conflict with 'prompt'
+const prompt2 = promptSync2();
 
-// Given string is a palindrome are not
+const inputString: string = prompt2("Enter a string: ");
+let reversed: string = "";
 
-import PromptSync from "prompt-sync";
-const prompt = PromptSync();
-const input: string = prompt("Enter a string: ");
-
-let reversed = "";
-for (let i = input.length - 1; i >= 0; i--) {
-  reversed += input[i];
+for (let i = inputString.length - 1; i >= 0; i--) {
+  reversed += inputString[i];
 }
 
-// Check if it's a palindrome
-if (reversed === input) {
+if (reversed === inputString) {
   console.log("The given string is a palindrome");
 } else {
   console.log("The given string is not a palindrome");
